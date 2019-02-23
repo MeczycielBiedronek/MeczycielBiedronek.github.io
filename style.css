@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*=======================================
+              RESET CSS END 
+  =======================================*/
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.center {
+  padding: 0 3rem 3rem;
+}
+
+.experiences {
+  margin-bottom: 1rem;
+}
+
+main, .title {
+  padding: 1.5rem 0;
+}
+
+.lowerContent {
+  font-weight: 700;
+  color: #b82c1c;
+  margin-bottom: 0.5rem;
+}
+.lowerContent p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-left: 25px;
+  color: black;
+}
+
+.upperContent {
+  position: relative;
+  font-weight: 700;
+}
+.upperContent span {
+  font-weight: 400;
+}
+.upperContent p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: grey;
+}
+.upperContent .flag {
+  display: block;
+  position: absolute;
+  width: 4.6rem;
+  top: 0;
+  right: -5rem;
+}
+.upperContent .flag img {
+  width: 2.1rem;
+  height: 2.1rem;
+  float: left;
+  padding-left: 0.4rem;
+  filter: drop-shadow(0 0 0.1rem black);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+.title {
+  margin-bottom: 3rem;
+}
+
+.experiences {
+  max-width: 300px;
+  display: grid;
+  margin-right: 80px;
+  justify-self: end;
+  text-align: right;
+}
+
+header {
+  background-color: grey;
+  display: grid;
+  width: 100vw;
+  justify-items: center;
+  background-image: url(img/blueSky.jpg);
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+}
+header h1 {
+  color: white;
+}
+header .name {
+  display: none;
+}
+header .face {
+  width: 50vh;
+  height: 50vh;
+  background-image: url(img/filip.png);
+  background-size: 100%;
+  position: relative;
+  align-self: center;
+  justify-self: center;
+}
+header .face .smallName {
+  position: absolute;
+  display: block;
+  max-width: 95%;
+  bottom: 1rem;
+  left: 5%;
+  background-color: #b82c1c;
+  border-radius: 10px;
+  padding: 0.8rem;
+  z-index: 2;
+}
+header .face .whiteBlock {
+  position: absolute;
+  display: block;
+  border-radius: 20px;
+  border: 1rem solid rgba(255, 255, 255, 0.5);
+  top: 3rem;
+  bottom: 1rem;
+  left: 2rem;
+  right: 2rem;
+  z-index: -1;
+}
+
+main {
+  color: black;
+  justify-content: center;
+}
+main section {
+  display: grid;
+  width: 100vw;
+  border-bottom: 3px solid #b82c1c;
+  padding-bottom: 20px;
+  margin: 10px 0;
+}
+main section .title {
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+  background-color: #e7e4e6;
+}
+
+aside {
+  display: grid;
+  width: 100vw;
+  color: black;
+  background-color: #e7e4e6;
+}
+aside h2 {
+  text-align: center;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.box {
+  display: grid;
+  grid-column-gap: 3rem;
+  grid-row-gap: 0rem;
+  padding: 0 55px 25px 55px;
+}
+
+.stars {
+  display: grid;
+  margin-bottom: 0.5rem;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 15px;
+  height: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.startLeft {
+  text-align: right;
+  display: block;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.starRight {
+  font-size: 1.6rem;
+  display: block;
+  height: 100%;
+  float: right;
+  color: #b82c1c;
+}
+
+.break {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+#psIcon, #htmlIcon, #cssIcon, #jsIcon, #enIcon, #esIcon, #ptIcon, #ruIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  position: absolute;
+  background-size: 1.5rem;
+  left: -1.8rem;
+}
+
+#psIcon {
+  background-image: url(img/ps.svg);
+}
+
+#htmlIcon {
+  background-image: url(img/html5.svg);
+}
+
+#cssIcon {
+  background-image: url(img/css.svg);
+}
+
+#jsIcon {
+  background-image: url(img/es6.svg);
+}
+
+#enIcon {
+  background-image: url(img/uk.svg);
+}
+
+#esIcon {
+  background-image: url(img/spain.svg);
+}
+
+#ptIcon {
+  background-image: url(img/portugal.svg);
+}
+
+#ruIcon {
+  background-image: url(img/russia.svg);
+}
+
+.hobby {
+  margin-bottom: 0.6rem;
+  position: relative;
+}
+.hobby p {
+  color: #b82c1c;
+}
+
+@media all and (min-width: 450px) {
+  .box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (min-width: 800px), screen and (orientation: landscape) {
+  header {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  header .name {
+    align-self: end;
+    display: block;
+    margin-bottom: 1rem;
+    background-color: #b82c1c;
+    border-radius: 10px;
+    padding: 0.8rem;
+  }
+  header .face .smallName {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
