@@ -63,6 +63,51 @@ body {
   padding: 0 3rem 3rem;
 }
 
+.contact {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.contact .git, .contact .tel, .contact .mail, .contact .port {
+  display: grid;
+  grid-template-columns: 3rem auto;
+}
+.contact .git .prawa, .contact .tel .prawa, .contact .mail .prawa, .contact .port .prawa {
+  padding: 0.8rem;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact .git .lewa, .contact .tel .lewa, .contact .mail .lewa, .contact .port .lewa {
+  padding: 0.8rem;
+}
+.contact .git {
+  background-color: #453738;
+}
+.contact .git .prawa {
+  background-image: url(img/github.svg);
+}
+.contact .port {
+  background-color: #94291e;
+}
+.contact .port .prawa {
+  background-image: url(img/port.svg);
+}
+.contact .tel {
+  background-color: #b82c1c;
+}
+.contact .tel .prawa {
+  background-image: url(img/tel.svg);
+}
+.contact .mail {
+  background-color: #d43c2a;
+}
+.contact .mail .prawa {
+  background-image: url(img/mail.svg);
+}
+
 .experiences {
   margin-bottom: 1rem;
 }
@@ -319,8 +364,18 @@ aside h2 {
     border-radius: 10px;
     padding: 0.8rem;
   }
+  header .face {
+    height: 70vh;
+    width: 70vh;
+  }
   header .face .smallName {
     display: none;
+  }
+}
+@media all and (min-width: 800px) and (orientation: landscape) {
+  .contact {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
   }
 }
 

@@ -78,7 +78,54 @@ body {
 .center {
   padding: 0 3rem 3rem;
 }
+  .contact {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
 
+    .git, .tel, .mail, .port{
+      display: grid;
+      grid-template-columns: 3rem auto ;
+      .prawa{
+        padding: 0.8rem;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .lewa {
+        padding: 0.8rem;
+
+      }
+    }
+    .git {
+      background-color: #453738;
+      .prawa {
+        background-image: url(img/github.svg);
+      }
+    }
+    .port {
+      background-color: #94291e;
+      .prawa {
+        background-image: url(img/port.svg);
+        
+      }
+    }
+    .tel {
+      background-color: $secondary-color;
+      .prawa {
+        background-image: url(img/tel.svg);
+        
+      }
+    }
+    .mail {
+      background-color: #d43c2a;
+      .prawa {
+        background-image: url(img/mail.svg);
+      }
+    }
+  }
   .experiences {
     margin-bottom: 1rem;
   }
@@ -306,10 +353,17 @@ body {
       @include round();
     }
     .face{
+      height: 70vh;
+      width: 70vh;
       .smallName {
         display: none;
       }
     }
   }
-
+}
+@media all and (min-width:800px) and (orientation:landscape) {
+  .contact {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    }
 }
